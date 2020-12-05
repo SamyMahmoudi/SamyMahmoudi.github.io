@@ -1,0 +1,317 @@
+%titreLobster {
+    font-weight: $fontweightnormal;
+    font-size: $fontsize20;
+    font-family: $fontLobster;
+    color: $bluepurple;
+}
+
+%titreSection {
+    color:$blacktitre;
+    font-family: $fontPoppins;
+}
+
+%whitePoppins {
+    color: $white;
+    font-family: $fontPoppins;
+}
+
+%greyPoppins {
+    color: $grey;
+    font-family: $fontPoppins;
+    font-size: $fontsize16;
+    font-weight: $fontweight300;
+    line-height: 1.56;
+}
+
+// section header
+
+.header-section {    
+    .logo {
+        p {
+        font-size: 40px;
+        margin: 40px 0px 0px 10px;
+        font-weight: $fontweightbold;
+        color: $blacktitre;
+        font-family: $fontPoppins;
+        }
+    }
+    .header-title {
+        h1 {
+            font-size: $fontsize50;
+            font-weight: $fontweightnormal;
+            color: $black;
+            font-family: $fontPoppins;
+            line-height: 1.2;
+            text-transform: uppercase;
+            span {
+                font-size: 74px;
+                font-weight: $fontweightbold;
+                }
+            }
+        p {     
+            @extend %greyPoppins;
+            padding: 30px 0px;
+            width: 65%;
+        }
+    }
+}    
+
+
+// Section who we are
+.article-WhoWeAre {
+    span {
+        @extend %titreLobster;
+        padding-bottom: 6px;
+    }
+    h2 {
+        @extend %titreSection;
+        font-size: $fontsize50;
+        font-weight: $fontweight600;
+        padding-bottom: 6px;
+    }
+    p{ 
+        @extend %greyPoppins;
+        padding-bottom: 20px;
+    }
+}
+
+// section service 
+.section-services {
+    span {
+        padding-left: 200px;
+        text-transform: uppercase;
+        font-family: $fontLato;
+        color: $bluepurple;
+        font-size: $fontsize25;
+        font-weight: $fontweightnormal;
+    }
+    h2 {
+        @extend %titreSection;
+        font-size: $fontsize50;
+        font-weight: $fontweight600;
+        padding-left: 200px;
+    }
+}
+
+.service {
+    h3 {
+        
+        font-size: $fontsize18;
+        font-weight: $fontweight600;
+        font-family: $fontPoppins;
+        padding-bottom: 30px;
+    }
+    p {
+        font-family: $fontLato;
+        font-size: $fontsize15;
+        font-weight: $fontweightnormal;
+        color:$black;
+        padding-bottom: 70px;
+    }
+}
+
+
+// section Price 
+
+.section-price {
+    text-align: center;
+    span {
+        @extend %titreLobster;
+        padding-top: 50px;
+    }
+    h2 {
+        @extend %titreSection;
+        font-size: $fontsize50;
+        font-weight: $fontweight600;
+    }
+}
+.container-price {
+    article { 
+        h3 {
+            font-family: $fontLobster;
+            font-size: $fontsize28;
+            font-weight: $fontweightnormal;
+        }
+        p { 
+            @extend %greyPoppins;
+            padding-top: 70px;
+        }
+        h4 {
+            font-size: $fontsize30;
+            font-weight: $fontweight600;
+            font-family: $fontPoppins;
+            color: $blue;
+            padding: 40px 0px;
+        }
+    }
+}
+
+
+// section-footer 
+
+.newsletter-footer {
+    .span-newsletter {
+        @extend %titreLobster;
+        padding-bottom: 6px;
+    }
+    h2 {
+        font-size: $fontsize32;
+        font-weight: $fontweightnormal;
+        font-family: $fontPoppins;
+        color: $black;
+        padding-bottom: 20px;
+        span {
+            font-weight: $fontweight600;
+        }
+    }
+}
+
+.section-footer {
+    h3 {
+        @extend %whitePoppins;   
+        font-size: $fontsize20;
+        font-weight: $fontweight500;
+        padding-bottom: 30px;
+    }
+}
+
+.footer-rs {
+    h3 {
+        font-size: $fontsize50;
+        color: $white;
+        font-weight: $fontweightnormal;
+        text-align: right;
+        
+    }
+    h4 {
+        @extend %whitePoppins;
+        font-size: $fontsize32;
+        font-weight: $fontweight500;
+    }
+}
+
+.footer-contact {
+    a {
+        @extend %whitePoppins;
+        font-size: $fontsize16;
+    } 
+    img {
+        padding-right: 10px;
+    }
+    p {
+        @extend %whitePoppins;
+        font-size: $fontsize16;
+        padding-top: 30px;
+    }
+}
+
+/************* RESPONSIVE ****************/
+@media (max-width:1200px)
+{   
+    // section header
+    .header-section {
+        .header-title {
+            p {
+                width: 100%;
+                padding: 0px;
+            }
+        }
+    }
+
+    // section services
+    .section-services {
+        span {
+            padding: 0;
+            display: block;
+            text-align: center;
+        }
+        h2 {
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    // section footer 
+    .section-footer {
+        .span-newsletter{
+            padding-bottom: 10px;
+        }
+    }
+
+    .footer-rs {
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+        h4 {
+            text-align: center;
+        }
+    }
+}
+@media (max-width:700px)
+{
+    //section header
+    .header-section {
+        .header-title {
+            h1 {
+                color: $white;
+                font-size: $fontsize32;            
+            span {
+                color: $pureBlack;
+                font-size: $fontsize50;
+                }
+            }
+        }
+        .logo {
+            p {
+                color: $white;
+                margin: 20px 0px 0px 10px;
+            }
+        }    
+        .header-title {
+            p {     
+                color: $white;
+                font-weight: $fontweight500;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+        }
+    }
+}   
+@media (max-width:450px){
+    
+    // section header
+    .header-section {
+        .logo {
+            p {
+                font-size: $fontsize28;
+            }
+        }
+    }
+    // section WhoWeAre
+    .article-WhoWeAre {
+        h2 {
+            font-size: $fontsize32;
+        }
+    }
+    // sectiln services
+    .section-services {
+        h2 {
+            font-size: $fontsize32 ;
+        }
+    }
+}
+
+@media (max-width:320px)
+{
+    // section header
+    .header-section {
+        .logo {
+            p {
+                font-size: $fontsize20;
+                margin: 10px 0px 0px 10px;
+            }
+            
+        }
+    }
+}

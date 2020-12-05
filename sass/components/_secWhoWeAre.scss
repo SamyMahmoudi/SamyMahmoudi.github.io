@@ -1,0 +1,66 @@
+.section-WhoWeAre {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    background: url(../assets/img/background-we-are.png) no-repeat;
+    background-position: 110% 10%;
+    aside {
+        width: 50%;
+        padding-left: 70px;
+    }
+    article{
+        padding-left: 70px;
+        width: 50%;
+        p {
+            width: 70%;
+        }
+    }
+}
+
+/************* RESPONSIVE ****************/
+
+@media (max-width:1200px)
+{
+    .section-WhoWeAre {
+        min-height: auto;
+        aside {
+            img {
+                width: 500px;
+            }
+        }
+    }
+}
+@media (max-width:1000px)
+{
+    .section-WhoWeAre {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+        aside {
+            margin-top: 50px;
+            padding: 0px;
+            width: 100%;
+            text-align: center;
+            img {
+                width: 300px;
+            }
+        }
+        article {
+            padding: 0px;
+            width: 90%;
+            margin: auto;
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width:450px)
+{
+    .section-WhoWeAre {
+        aside {
+            img{
+                width: 200px;
+            }
+        }
+    }
+}
